@@ -1,0 +1,196 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+//Apartado de Estadisticas
+#estadisticas {
+    background-color: #FF5733;
+    border-radius: 25px;
+    #estadisticas_primero {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px;
+        margin: 0 15px;
+        width: 40%;
+        #estadisticas_primero_uno {
+            text-align: center;
+            span {
+                color: #F7F7F7;
+                position: relative;
+                right: 38%;
+                font-weight: 200;
+            }
+            h5 {
+                font-weight: 700;
+            }
+        }
+        #estadisticas_primero_uno:nth-child() {
+            color: #333;
+        }
+    }
+    hr {
+        border: solid 1px rgb(233, 233, 233);
+    }
+    #estadisticas_segundo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px;
+        width: 40%;
+        div {
+            margin: 0 15px;
+            h4 {
+                font-size: 35px;
+                font-weight: 700;
+                color: #F7F7F7;
+            }
+            h5 {
+                font-weight: 400;
+            }
+        }
+    }
+    #estadisticas_tercero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        button:hover {
+            background: #333;
+            color: #F7F7F7;
+        }
+    }
+}
+
+#box {
+    background-color: #FF5733;
+}
+
+.clockdate-wrapper {
+    background-color: #333;
+    padding: 13px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#clock {
+    background-color: #333;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-shadow: 0px 0px 1px #fff;
+    color: #fff;
+}
+
+#clock span {
+    color: #888;
+    text-shadow: 0px 0px 1px #333;
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+    left: -10px;
+}
+
+#date {
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-family: arial, sans-serif;
+    color: #fff;
+}
+
+//MEDIA QUERIES
+@media screen and (max-width: 500px) {
+    #especifico {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        div {
+            margin: 1.5rem;
+        }
+    }
+    .clockdate-wrapper {
+        background-color: #333;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+    }
+    #estadisticas {
+        width: 70%;
+        background-color: #FF5733;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        #estadisticas_primero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            width: 100%;
+            #estadisticas_primero_uno {
+                text-align: center;
+                span {
+                    font-size: 19px;
+                    color: #F7F7F7;
+                    position: relative;
+                    right: 38%;
+                    font-weight: 200;
+                }
+                h5 {
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+            #estadisticas_primero_uno:nth-child() {
+                color: #333;
+            }
+            #estadisticas_primero_dos {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        hr {
+            border: solid 1px rgb(233, 233, 233);
+        }
+        #estadisticas_segundo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px;
+            text-align: center;
+            width: 40%;
+            div {
+                padding: 20px;
+                h4 {
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: #F7F7F7;
+                }
+                h5 {
+                    font-weight: 400;
+                }
+            }
+        }
+        #estadisticas_tercero {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            button {
+                position: fixed;
+                z-index: 3000;
+                top: 90%;
+                left: 35%;
+            }
+            button:hover {
+                background: #333;
+                color: #F7F7F7;
+            }
+        }
+    }
+}
