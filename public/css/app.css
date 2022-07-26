@@ -242,13 +242,13 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
     margin: auto;
   }
   #estadisticas #estadisticas_tercero button {
     position: fixed;
     z-index: 3000;
     top: 90%;
-    left: 35%;
   }
   #estadisticas #estadisticas_tercero button:hover {
     background: #333;

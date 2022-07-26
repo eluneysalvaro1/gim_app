@@ -8,15 +8,15 @@
       <hr class="w-50"> 
       <h6>{{$rutina[0]->fecha}}</h6>
     </div>
-        <div class="accordion m-3" id="accordionExample{{$i}}">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne{{$i}}">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{$i}}" aria-expanded="true" aria-controls="collapseOne">
+        <div class="accordion m-2 border-0 shadow" id="accordionExample{{$i}}">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header border-0" id="headingOne{{$i}}">
+              <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{$i}}" aria-expanded="false" aria-controls="collapseOne{{$i}}">
                 Rutina realizada el dia: {{$rutina[0]->fecha}}         
               </button>
           </h2>
           @forelse ($rutina as $ruti)
-                <div id="collapseOne{{$i}}" class="accordion-collapse" aria-labelledby="headingOne{{$i}}" data-bs-parent="#accordionExample{{$i}}">
+                <div id="collapseOne{{$i}}" class="accordion-collapse border-0" aria-labelledby="headingOne{{$i}}" data-bs-parent="#accordionExample{{$i}}">
                   <div class="accordion-body">
                       <p>Se hicieron <strong>{{$ruti->repeticiones}} repeticiones</strong>  con un peso promedio de <strong>{{$ruti->promedio_peso}} Kg</strong> haciendo <strong>{{$ruti->ejercicio['nombre']}}</strong> para trabajar <strong>{{$ruti->ejercicio['musculo_trabajado']}}</strong>  </p>
                   </div>
@@ -29,7 +29,7 @@
     
     <?php $i++ ?> 
     @empty
-        No hay resultados
+        <p class="alert alert-warning">No hay resultados</p>
     @endforelse
     
     

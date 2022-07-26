@@ -18,7 +18,7 @@
     </div>
     <hr>
     <div id="estadisticas_segundo" class="">
-        @if(isset($estadisticas))
+        @if(count($estadisticas)>0)
             <?php
                 $es = $estadisticas[0]
             ?>
@@ -33,7 +33,7 @@
             <div id="estadisticas_segundo_uno">
                 <h4>Edad</h4>
                 <h5 id="fecha" class="d-none">{{ $es['edad'] }}</h5>
-                <h5  id="age"></h5>
+                <h5 id="age"></h5>
             </div>
         @else
             <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#estadisticasModal"> Ingresar Estadisticas </button>
@@ -41,7 +41,7 @@
     </div> 
     <hr>
     <div id="estadisticas_tercero">
-        <button id="estadisticas_tercero_uno" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#rutinaModal"> Agregar Rutina </button>
+        <button id="estadisticas_tercero_uno" class="btn btn-dark m-auto" data-bs-toggle="modal" data-bs-target="#rutinaModal"> Agregar Rutina </button>
     </div>
    
 </div>

@@ -2,7 +2,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="rutinaModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="rutinaModalLabel">Datos de la rutina</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -11,16 +11,16 @@
                     @csrf
                     <div class="mb-3">
                         <label for="fecha" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" name="fecha" id="fecha" placeholder="2002-06-26">
+                        <input type="date" class="form-control" name="fecha" id="fecha" placeholder="2002-06-26" required>
                     </div>
                     <div class="mb-3">
                         <label for="repeticiones" class="form-label">Repeticiones</label>
-                        <input type="number" class="form-control" name="repeticiones" id="repeticiones" placeholder="69">
+                        <input type="number" class="form-control" name="repeticiones" id="repeticiones" placeholder="69" required>
                     </div>
                     
                     <div class="mb-3">
                         <label for="promedio_peso" class="form-label">Promedio Peso</label>
-                        <input type="number" class="form-control" name="promedio_peso" id="promedio_peso" placeholder="1">
+                        <input type="number" class="form-control" name="promedio_peso" id="promedio_peso" placeholder="1" required>
                     </div>
                     <div class="mb-3">
                         <label for="km_bicicleta" class="form-label">Ejercicio</label>

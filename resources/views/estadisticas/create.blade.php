@@ -11,27 +11,27 @@
                 @csrf
                 <div class="mb-3">
                     <label for="altura" class="form-label">Altura</label>
-                    <input type="number" class="form-control" name="altura" id="altura" placeholder="1.70">
+                    <input type="number" class="form-control" name="altura" id="altura" placeholder="1.70" required>
                 </div>
                 <div class="mb-3">
                     <label for="peso" class="form-label">Peso</label>
-                    <input type="number" class="form-control" name="peso" id="peso" placeholder="69">
+                    <input type="number" class="form-control" name="peso" id="peso" placeholder="69" required>
                 </div>
                 <div class="mb-3">
                     <label for="edad" class="form-label">Edad</label>
-                    <input type="date" class="form-control" name="edad" id="edad" placeholder="2002-06-26">
+                    <input type="date" class="form-control" name="edad" id="edad" placeholder="2002-06-26" required>
                 </div>
                 <div class="mb-3">
                     <label for="km_corridos" class="form-label">Km Corridos</label>
-                    <input type="number" class="form-control" name="km_corridos" id="km_corridos" placeholder="1">
+                    <input type="number" class="form-control" name="km_corridos" id="km_corridos" placeholder="1" required>
                 </div>
                 <div class="mb-3">
                     <label for="km_bicicleta" class="form-label">Km Bicicleteados</label>
-                    <input type="number" class="form-control" name="km_bicicleta" id="km_bicicleta" placeholder="325">
+                    <input type="number" class="form-control" name="km_bicicleta" id="km_bicicleta" placeholder="325" required>
                 </div>
                 <div class="mb-3">
                     <label for="meses_entrenando" class="form-label">Meses Entrenando</label>
-                    <input type="number" class="form-control" name="meses_entrenando" id="meses_entrenando" placeholder="7">
+                    <input type="number" class="form-control" name="meses_entrenando" id="meses_entrenando" placeholder="7" required>
                 </div>
             </div>
         </div>

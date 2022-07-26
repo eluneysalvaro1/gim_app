@@ -1,0 +1,23 @@
+{
+    "name": "GymApp",
+    "short_name": "GApp",
+    "description": "hola",
+    "background_color": "#FF3A00",
+    "theme_color": "#EDEDED",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-AR",
+    "icons": [{
+            "src": "./dumbbell-solid.svg",
+            "sizes": "188x150",
+            "type": "image/svg"
+        },
+        {
+            "src": "./dumbbell-solid.svg",
+            "sizes": "25x25",
+            "type": "image/svg"
+        }
+    ]
+}
